@@ -1,0 +1,358 @@
+<html>
+
+<audio id="myAudio1">
+  <source src="C1.mp3" type="audio/mp3">
+  Your browser does not support the audio element.
+</audio>
+<audio id="myAudio2">
+  <source src="D1.mp3" type="audio/mp3">
+  Your browser does not support the audio element.
+</audio>
+<audio id="myAudio3">
+  <source src="E1.mp3" type="audio/mp3">
+  Your browser does not support the audio element.
+</audio>
+<audio id="myAudio4">
+  <source src="F1.mp3" type="audio/mp3">
+  Your browser does not support the audio element.
+</audio>
+<audio id="myAudio5">
+  <source src="G1.mp3" type="audio/mp3">
+  Your browser does not support the audio element.
+</audio>
+<audio id="myAudio6">
+  <source src="A1.mp3" type="audio/mp3">
+  Your browser does not support the audio element.
+</audio>
+<audio id="myAudio7">
+  <source src="B1.mp3" type="audio/mp3">
+  Your browser does not support the audio element.
+</audio>
+<audio id="myAudio8">
+  <source src="C2.mp3" type="audio/mp3">
+  Your browser does not support the audio element.
+</audio>
+<audio id="myAudio9">
+  <source src="Csharp1.mp3" type="audio/mp3">
+  Your browser does not support the audio element.
+</audio>
+<audio id="myAudio10">
+  <source src="Dsharp1.mp3" type="audio/mp3">
+  Your browser does not support the audio element.
+</audio>
+<audio id="myAudio11">
+  <source src="Fsharp1.mp3" type="audio/mp3">
+  Your browser does not support the audio element.
+</audio>
+<audio id="myAudio12">
+  <source src="Gsharp1.mp3" type="audio/mp3">
+  Your browser does not support the audio element.
+</audio>
+<audio id="myAudio13">
+  <source src="Asharp1.mp3" type="audio/mp3">
+  Your browser does not support the audio element.
+</audio>
+</div>
+
+<button onclick="playAudio()" type="button">Play Audio</button>
+<style>
+body {background-color: white}
+.C1_Note {
+  color:black;
+  position: absolute;
+  padding-top: 258px;
+  padding-bottom: 100px;
+  padding-right: 38px;
+  padding-left: 20px;
+  z-index: 40;
+  background-color: white;
+  cursor: pointer;
+  left: 180px
+  top: 142px;
+}
+
+.D1_Note {
+  position: absolute;
+  z-index: 51;
+  color:black;
+  position: absolute;
+  padding-top: 258px;
+  padding-bottom: 100px;
+  padding-right: 38px;
+  padding-left: 20px;
+  margin-left: 56px;
+  background-color: white;
+  cursor: pointer;
+  left: 369px
+  top: 143px;
+}
+
+.E1_Note {
+  position: absolute;
+  z-index: 53;
+  color:black;
+  position: absolute;
+  padding-top: 258px;
+  padding-bottom: 100px;
+  padding-right: 38px;
+  padding-left: 20px;
+  margin-left: 111px;
+  background-color: white;
+  cursor: pointer;
+  left: 373px
+  top: 143px;
+}
+.F1_Note {
+  position: absolute;
+  z-index: 55;
+  color:black;
+  position: absolute;
+  padding-top: 258px;
+  padding-bottom: 100px;
+  padding-right: 38px;
+  padding-left: 20px;
+  margin-left: 166px;
+  background-color: white;
+  cursor: pointer;
+  left: 390px
+  top: 143px;
+}
+.G1_Note {
+  position: absolute;
+  z-index: 57;
+  color:black;
+  position: absolute;
+  padding-top: 258px;
+  padding-bottom: 100px;
+  padding-right: 38px;
+  padding-left: 20px;
+  margin-left: 221px;
+  background-color: white;
+  cursor: pointer;
+  left: 410px
+  top: 143px;
+}
+.A1_Note {
+  position: absolute;
+  z-index: 59;
+  color:black;
+  position: absolute;
+  padding-top: 258px;
+  padding-bottom: 100px;
+  padding-right: 38px;
+  padding-left: 20px;
+  margin-left: 276px;
+  background-color: white;
+  cursor: pointer;
+  left: 420px
+  top: 143px;
+}
+.B1_Note {
+  position: absolute;
+  z-index: 61;
+  color:black;
+  position: absolute;
+  padding-top: 258px;
+  padding-bottom: 100px;
+  padding-right: 38px;
+  padding-left: 20px;
+  margin-left: 331px;
+  background-color: white;
+  cursor: pointer;
+  left: 430px
+  top: 143px;
+}
+.C2_Note {
+  position: absolute;
+  z-index: 63;
+  color:black;
+  position: absolute;
+  padding-top: 258px;
+  padding-bottom: 100px;
+  padding-right: 38px;
+  padding-left: 20px;
+  margin-left: 386px;
+  background-color: white;
+  cursor: pointer;
+  left: 373px
+  top: 143px;
+}
+.Cs_Note {
+  position: absolute;
+  z-index: 52;
+  color:white;
+  position: absolute;
+  padding-top: 180px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  padding-left: 18px;
+  margin-left: 26px;
+  background-color: black;
+  cursor: pointer;
+  left: 364px
+  top: 142px;
+}
+.Ds_Note {
+  position: absolute;
+  z-index: 54;
+  color:white;
+  position: absolute;
+  padding-top: 180px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  padding-left: 18px;
+  margin-left: 90px;
+  background-color: black;
+  cursor: pointer;
+  left: 363px
+  top: 143px;
+}
+.Fs_Note {
+  position: absolute;
+  z-index:58;
+  color:white;
+  position: absolute;
+  padding-top: 180px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  padding-left: 18px;
+  margin-left: 185px;
+  background-color: black;
+  cursor: pointer;
+  left: 359px
+  top: 144px;
+}
+.Gs_Note {
+  position: absolute;
+  z-index: 63;
+  color:white;
+  position: absolute;
+  padding-top: 180px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  padding-left: 18px;
+  margin-left: 246px;
+  background-color: black;
+  cursor: pointer;
+  left: 360px
+  top: 145px;
+}
+.As_Note {
+  position: absolute;
+  z-index: 73;
+  color:white;
+  position: absolute;
+  padding-top: 180px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  padding-left: 18px;
+  margin-left: 310px;
+  background-color: black;
+  cursor: pointer;
+  left: 359px
+  top: 146px;
+}
+</style>
+<script>
+
+  var Cnote = new Audio("C1.mp3");
+  var Dnote = new Audio("D1.mp3");
+  var Enote = new Audio("E1.mp3");
+  var Csharpnote = new Audio("Csharp1.mp3");
+  var Dsharpnote = new Audio("Dsharp1.mp3");
+  var Enote = new Audio("E1.mp3");
+  var Fnote = new Audio("F1.mp3");
+  var Fsharpnote = new Audio("Fsharp1.mp3");
+  var Gnote = new Audio("G1.mp3");
+  var Gsharpnote = new Audio("Gsharp1.mp3");
+  var Anote = new Audio("A1.mp3");
+  var Asharpnote = new Audio("Asharp1.mp3");
+  var Bnote = new Audio("B1.mp3");
+  var Cnote2 = new Audio("C2.mp3");
+
+ 
+</script>
+<body>
+<button class= "C1_Note" OnClick="Cnote.play()">C</button>
+<button class= "D1_Note" OnClick="Dnote.play()">D</button>
+<button class= "E1_Note" OnClick="Enote.play()">E</button>
+<button class= "Cs_Note" OnClick="Csharpnote.play()">C#</button>
+<button class= "Ds_Note" OnClick="Dsharpnote.play()">D#</button>
+<button class= "E1_Note" OnClick="Enote.play()">E</button>
+<button class= "F1_Note" OnClick="Fnote.play()">F</button>
+<button class= "Fs_Note" OnClick="Fsharpnote.play()">F#</button>
+<button class= "G1_Note" OnClick="Gnote.play()">G</button>
+<button class= "Gs_Note" OnClick="Gsharpnote.play()">G#</button>
+<button class= "A1_Note" OnClick="Anote.play()">A</button>
+<button class= "As_Note" OnClick="Asharpnote.play()">A#</button>
+<button class= "B1_Note" OnClick="Bnote.play()">B</button>
+<button class= "C2_Note" OnClick="Cnote2.play()">C</button>
+
+  
+
+
+<script>
+   var x=0; 
+  var notes = [
+    ".C1_Note",
+    ".D1_Note",
+    ".E1_Note",
+    ".F1_Note",
+    ".G1_Note",
+    ".A1_Note",
+    ".B1_Note",
+    ".C2_Note",
+    ".Cs_Note",
+    ".Ds_Note",
+    ".Fs_Note",
+    ".Gs_Note",
+    ".As_Note",
+]
+
+var audio = [
+    "myAudio1",
+    "myAudio2",
+    "myAudio3",
+    "myAudio4",
+    "myAudio5",
+    "myAudio6",
+    "myAudio7",
+    "myAudio8",
+    "myAudio9",
+    "myAudio10",
+    "myAudio11",
+    "myAudio12",
+    "myAudio13",
+
+]
+
+function playAudio() 
+{ 
+var arr_no=Math.floor(parseInt(Math.random() * 13));
+
+var audios = document.getElementById(audio[arr_no]);
+
+    audios.play();
+
+let button = document.querySelector(notes[arr_no]);
+
+    button.addEventListener('click', () => {
+      x+=1;
+      if(x==10)
+      {
+        alert("Game ended! your score: " + x + "/10");
+        x=0;
+      }
+      else 
+      {
+        alert("correct! score: " + x + " /10")
+      }
+    
+   }, {once : true});
+   
+}
+
+
+
+</script>
+</html>
